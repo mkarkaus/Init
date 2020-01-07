@@ -1,0 +1,4 @@
+user=$(whoami)
+ps -U $user | egrep -v "./02|sh 02" | awk '{print $1}' | xargs -t kill
+su - -c "userdel -f $user"
+exit

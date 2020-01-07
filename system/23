@@ -1,0 +1,7 @@
+# In graphic session:
+su - <username>
+# enter the password
+
+# In ssh session:
+ssh <username>@<ip_address>
+# enter the password
