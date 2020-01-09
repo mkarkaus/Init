@@ -1,2 +1,2 @@
 ifconfig en0 | grep 'broadcast' | awk '{print $6}'
-arp -a
+arp -a | grep '10.12' | awk '{print $2}' | cut -c 2- | sed 's/.$//'
