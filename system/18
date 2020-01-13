@@ -1,1 +1,1 @@
-var=$(ps -u miikka | grep 'sshd' | awk '{print $1}') && kill "$var"
+user=$(whoami) && var=$(ps -u miikka | grep 'sshd' | awk '{print $1}') && kill "$var"
